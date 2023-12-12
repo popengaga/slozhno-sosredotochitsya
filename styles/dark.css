@@ -12,7 +12,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --decor-color:#FF0070;
-  --button-color:#FF0070;;
+  --button-color:#FF0070;
   --accent-color:#FF0070;
   --logo-color:#DB00FF;
   --main-title-color:#FF0070;
@@ -22,4 +22,5 @@
   --background-color:#000028;
   --background-image:url(../images/cover-image-dark.png);
   --button-hover-color: rgba(50, 49, 45, 0.40);
+  --text-shadow-color:#FF0070;
 }

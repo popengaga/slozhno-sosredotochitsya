@@ -3,9 +3,10 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--background-color);
+  background-attachment: fixed
 }
 
-.header{
+.header {
   position: relative;
   display: grid;
   align-items: baseline;
@@ -17,9 +18,9 @@
 
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .header{
-    min-height: 984px;
+    min-height: 1024px;
   }
 }
 
@@ -38,7 +39,7 @@
   text-transform: uppercase;
 }
 
-.header__decor::after{
+.header__decor::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -53,7 +54,7 @@
 
 }
 
-.header::before{
+.header::before {
   content: "";
   position: absolute;
   top:20px;
@@ -65,13 +66,13 @@
   
 }
 
-@media (width < 768px) and (width >= 375px){
+@media (width < 768px) and (width >= 375px) {
   .header::before{
     inset-inline-end: 0px;
   }
 }
 
-.header::after{
+.header::after {
   content: "";
   position: absolute;
   left: 20px;
@@ -82,34 +83,34 @@
   inset-block-end: 20px;
 }
 
-@media (width < 768px) and (width >= 375px){
+@media (width < 768px) and (width >= 375px) {
   .header::after{
     inset-block-end: 0px;
   }
 }
 
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   flex-direction:row;
   justify-content: center;
   gap: 10px;
 }
 
-@media (width < 1024px){
-  .header__theme-menu-list{
+@media (width < 1024px) {
+  .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
     margin-top: 193px;
   }
 }
 
-@media (width < 768px) and (width >= 375px){
-  .header__theme-menu-list{
-    margin-top: 76.5px;
+@media (width < 768px) and (width >= 375px) {
+  .header__theme-menu-list {
+    align-self: center;
   }
 }
 
-.header__theme-menu-button{
+.header__theme-menu-button {
   margin: 0px, 13px;
   border: 0px;
   color: var(--button-color);
@@ -124,7 +125,14 @@
 
 }     
 
-.header__theme-menu-button:hover{
+@media (width < 1024px) {
+  .header__theme-menu-button {
+    padding: 1px 13px;
+
+  }
+}
+
+.header__theme-menu-button:hover {
   border: 1px solid var(--button-hover-color);
 }
 
@@ -141,35 +149,48 @@
   border: 1px solid;
 }
 
-.logo{
+.logo {
   color: var(--logo-color);
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 157px;
   font-style: normal;
   line-height: 82.5%;
+  text-shadow: 4px 4px 0px #FF0070
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .logo{
     font-size: 120px;
   }
 }
 
-@media (width < 768px) and (width >= 375px){
-  .logo{
+@media (width < 768px) and (width >= 375px) {
+  .logo {
     font-size: 116px;
   }
 }
 
-.header__logo{
+.header__logo {
   z-index: 1;
   justify-self:left;
   align-self: center;
   text-shadow: 4px 4px 0px #FF0070;
 }
 
-.title{
+@media (width < 1024px) {
+  .header__logo {
+    text-shadow:  4px 4px 0px var(--text-shadow-color);
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .header__logo {
+    text-shadow:  4px 4px 0px var(--text-shadow-color);
+  }
+}
+
+.title {
   color: var(--title-color);
   font-family: var(--font-family);
   font-weight: 700;
@@ -179,26 +200,26 @@
   background-color:var(--backround-title-color);
 }
 
-.header__title{
+.header__title {
   justify-self: right;
   width: 491px;
 
 }
 
-@media (width < 1024px){
-  .header__title{
+@media (width < 1024px) {
+  .header__title {
     width: 364px;
   }
 }
 
-@media (width < 768px) and (width >= 375px){
-  .header__title{
+@media (width < 768px) and (width >= 375px) {
+  .header__title {
     width: 355px;
     margin-top: 55px;
   }
 }
 
-.text{
+.text {
   color: var(--text-color);
   font-family: var(--font-family);
   font-weight: 400;
@@ -207,7 +228,7 @@
   line-height: 23.4px;
 }
 
-.section__why{
+.section__why {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -218,57 +239,57 @@
   padding: 0px 20px;
 }
 
-@media (width < 1024px){
-  .section__why{
+@media (width < 1024px) {
+  .section__why {
     min-height: 648px ;
   }
 }
 
-@media (width < 768px) and (width >= 375px){
-  .section__why{
+@media (width < 768px) and (width >= 375px) {
+  .section__why {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     min-height: 949px;
   }
 }
 
-.section__why-title{
+.section__why-title {
   max-width: 314.96px;
   overflow-wrap: break-word;
   color: var(--main-title-color);
   background-color: transparent;
 }
 
-@media (width < 1024px){
-  .section__why-title{
+@media (width < 1024px) {
+  .section__why-title {
     max-width:236px;
   }
 }
 
-@media (width < 768px) and (width >= 375px){
-  .section__why-title{
+@media (width < 768px) and (width >= 375px) {
+  .section__why-title {
     max-width: 355px;
   }
 }
 
-.section__why-list{
+.section__why-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
   height: 211px;
 }
 
-@media (width < 768px) and (width >= 375px){
-  .section__why-list{
+@media (width < 768px) and (width >= 375px) {
+  .section__why-list {
     height: auto;
   }
 }
 
-.section__why-item-title{
+.section__why-item-title {
   margin-bottom: 10px;
 }
 
-.section__why-item-link{
+.section__why-item-link {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
@@ -278,19 +299,19 @@
   text-shadow: 2px 2px 0px var(--accent-color);
 }
 
-.section__why-item-link:hover{
+.section__why-item-link:hover {
   text-decoration: underline;
 }
 
-.section__why-item-link:focus{
+.section__why-item-link:focus {
   outline: none;
 }
 
-.section__why-item-link:focus-visible{
+.section__why-item-link:focus-visible {
   border: 1px solid;
 }
 
-.section__what{
+.section__what {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto;
@@ -300,7 +321,7 @@
 
 }
 
-.section__what-list{
+.section__what-list {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
@@ -308,24 +329,25 @@
   min-height: 413px;
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .section__what-list{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
   }
 }
 
-.section__what-item-title{
+.section__what-item-title {
   margin-bottom: 10px;
 }
 
-.section__what-title{
+.section__what-title {
+  max-width: 315px;
   margin-bottom: 20px;
   color: var(--main-title-color);
   background-color: transparent;
 }
 
-.section__how{
+.section__how {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
@@ -335,13 +357,13 @@
   padding: 0px 20px;
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .section__how{
     min-height: 648px;
   }
 }
 
-@media (width < 768px) and (width >= 375px){
+@media (width < 768px) and (width >= 375px) {
   .section__how{
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -349,47 +371,47 @@
   }
 }
 
-.section__how-title{
+.section__how-title {
   max-width: 315px;
   color: var(--main-title-color);
   background-color: transparent;
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .section__how-title{
     max-width: 236px;
   }
 }
 
-.section__how-list{
+.section__how-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.section__how-item-title{
+.section__how-item-title {
   margin-bottom: 10px;
   font-weight: 400;
 }
 
-.section__pictures{
+.section__pictures {
   min-height: 1019px;
   margin-top: 80px;
   padding: 0px 20px;
 
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .section__pictures{
     min-height: 823px;
   }
 }
 
-.section__pictures-title{
+.section__pictures-title {
   margin-bottom: 20px;
 }
 
-.pictures__content{
+.pictures__content {
   display: grid;
   grid-template-areas:
   " sunset sunset ice-cream "
@@ -400,7 +422,7 @@
 }
 
 @media (width < 768px) and (width >= 375px){
-  .pictures__content{
+  .pictures__content {
     grid-template-areas:
     "sunset"
     "ice-cream"
@@ -411,7 +433,7 @@
   }
 }
 
-.picture{
+.picture {
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -419,17 +441,27 @@
 
 }
 
-.sunset{ grid-area: sunset;}
+.sunset { 
+  grid-area: sunset;
+}
 
-.ice-cream{grid-area: ice-cream;}
+.ice-cream {
+  grid-area: ice-cream;
+}
 
-.books{grid-area: books;}
+.books {
+  grid-area: books;
+}
 
-.tape{ grid-area: tape;}
+.tape { 
+  grid-area: tape;
+}
 
-.street{ grid-area: street;}
+.street { 
+  grid-area: street;
+}
 
-.footer{
+.footer {
   position: relative;
   display: grid;
   justify-items: center;
@@ -439,11 +471,23 @@
   padding: 20px 20px;
 }
 
-.footer__logo{
+@media (width < 1024px) {
+  .footer{
+    min-height: 1024px;
+  }
+}
+
+.footer__logo {
   text-shadow: 2px 2px 0px #FF0070;
 }
 
-.footer::before{
+@media (width < 1024px){
+  .footer__logo{
+    text-shadow: 2px 2px 0px var(--text-shadow-color);
+  }
+}
+
+.footer::before {
   content: "";
   position: absolute;
   top:20px;
@@ -454,7 +498,7 @@
   inset-inline-end: 20px;
 }
 
-.footer::after{
+.footer::after {
   content: "";
   position: absolute;
   left: 20px;

@@ -20,9 +20,10 @@
   --background-color:#FFF1F7;
   --background-image:url(../images/cover-image-light.png);
   --button-hover-color: rgba(255, 0, 112, 0.40);
+  --text-shadow-color:#FF8DCB;
 
 }
 
-.page.theme_light .header__decor{
+.page.theme_light .header__decor {
   display: none;
 }
