@@ -26,6 +26,7 @@
 @media (width < 768px) and (width >= 375px) {
   .header{
     min-height: 668px;
+    padding: 10px;
   }
 }
 
@@ -67,7 +68,8 @@
 
 @media (width < 768px) and (width >= 375px) {
   .header::before{
-    inset-inline-end: 0px;
+    inset-inline-end: 10px;
+    top: 10px;
   }
 }
 
@@ -84,7 +86,8 @@
 
 @media (width < 768px) and (width >= 375px) {
   .header::after{
-    inset-block-end: 0px;
+    inset-block-end: 10px;
+    left: 10px;
   }
 }
 
@@ -105,7 +108,7 @@
 
 @media (width < 768px) and (width >= 375px) {
   .header__theme-menu-list {
-    align-self: center;
+    margin-top: 76.5px;
   }
 }
 
@@ -124,7 +127,6 @@
   background-color: transparent;
 
 }     
-
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--button-hover-color);
@@ -183,6 +185,9 @@
 @media (width < 768px) and (width >= 375px) {
   .header__logo {
     text-shadow:  4px 4px 0px var(--text-shadow-color);
+    min-height: 192px;
+    justify-self: auto;
+    align-self: flex-end;
   }
 }
 
@@ -198,14 +203,12 @@
 
 .header__title {
   justify-self: right;
-  align-self: center;
   width: 491px;
 
 }
 
 @media (width < 1024px) {
   .header__title {
-    align-self: auto;
     width: 364px;
   }
 }
@@ -248,6 +251,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     min-height: 949px;
+    margin-top: 40px;
   }
 }
 
@@ -319,6 +323,12 @@
 
 }
 
+@media (width < 768px) and (width >= 375px) {
+  .section__what {
+    margin-top: 50px;
+  }
+}
+
 .section__what-list {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -372,6 +382,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     min-height: 1736px;
+    margin-top: 50px;
   }
 }
 
@@ -408,6 +419,12 @@
 @media (width < 1024px) {
   .section__pictures{
     min-height: 823px;
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .section__pictures{
+    margin-top: 50px;
   }
 }
 
@@ -478,6 +495,14 @@
 @media (width < 1024px) {
   .footer{
     min-height: 1024px;
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .footer{
+    min-height: 667px;
+    margin-top: 40px;
+    padding: 10px;
   }
 }
 
