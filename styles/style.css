@@ -44,7 +44,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  width: 9px; 
+  width: 9px;
   height: 9px;
   margin: -5px -20px 0 0;
   border-radius: 50%;
@@ -137,7 +137,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--button-color);  
+  border-bottom: 1px solid var(--button-color);
   outline: none;
 }
 
@@ -340,13 +340,13 @@
 }
 
 @media (width < 1024px) {
-  .section__what-list{
+  .section__what-list {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
   }
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .section__what-list {
     width: auto;
   }
@@ -370,7 +370,7 @@
   background-color: transparent;
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .section__what-title {
     width: 236px;
   }
@@ -415,13 +415,13 @@
 }
 
 @media (width < 1024px) {
-  .section__how-title{
+  .section__how-title {
     max-width: 236px;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .section__how-title{
+  .section__how-title {
     min-width: 355px;
   }
 }
@@ -445,13 +445,13 @@
 }
 
 @media (width < 1024px) {
-  .section__pictures{
+  .section__pictures {
     min-height: 823px;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .section__pictures{
+  .section__pictures {
     margin-top: 50px;
     padding: 0px 10px;
   }
@@ -462,7 +462,7 @@
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .section__pictures-title{
+  .section__pictures-title {
     margin-bottom: 10px;
   }
 }
@@ -477,7 +477,7 @@
 
 }
 
-@media (width < 768px) and (width >= 375px){
+@media (width < 768px) and (width >= 375px) {
   .pictures__content {
     grid-template-areas:
     "sunset"
@@ -497,7 +497,7 @@
 
 }
 
-.sunset { 
+.sunset {
   grid-area: sunset;
 }
 
@@ -509,11 +509,11 @@
   grid-area: books;
 }
 
-.tape { 
+.tape {
   grid-area: tape;
 }
 
-.street { 
+.street {
   grid-area: street;
 }
 
@@ -545,7 +545,7 @@
   text-shadow: 2px 2px 0px #FF0070;
 }
 
-@media (width < 1024px){
+@media (width < 1024px) {
   .footer__logo {
     text-shadow: 2px 2px 0px var(--text-shadow-color);
   }
