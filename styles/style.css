@@ -18,13 +18,13 @@
 }
 
 @media (width < 1024px) {
-  .header{
+  .header {
     min-height: 1024px;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .header{
+  .header {
     min-height: 668px;
     padding: 10px;
   }
@@ -67,7 +67,7 @@
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .header::before{
+  .header::before {
     top: 10px;
     inset-inline-end: 10px;
   }
@@ -85,7 +85,7 @@
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .header::after{
+  .header::after {
     left: 10px;
     inset-block-end: 10px;
   }
@@ -156,7 +156,7 @@
 }
 
 @media (width < 1024px) {
-  .logo{
+  .logo {
     font-size: 120px;
   }
 }
