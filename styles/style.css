@@ -252,6 +252,7 @@
     grid-template-rows: auto auto;
     min-height: 949px;
     margin-top: 40px;
+    padding: 0px 10px;
   }
 }
 
@@ -320,14 +321,14 @@
   grid-auto-flow: dense;
   margin-top: 80px;
   padding: 0px 20px;
-  min-height: 498px;
+
 
 }
 
 @media (width < 768px) and (width >= 375px) {
   .section__what {
     margin-top: 50px;
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
 
@@ -336,7 +337,6 @@
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   gap: 20px;
-  min-height: 413px;
 }
 
 @media (width < 1024px) {
@@ -346,8 +346,21 @@
   }
 }
 
+@media (width < 1024px){
+  .section__what-list {
+    width: auto;
+  }
+}
+
+@media (width < 768px) and (width >= 375px) {
+  .section__what-list {
+    min-width: auto;
+  }
+}
+
 .section__what-item-title {
   margin-bottom: 10px;
+  min-width: 315px;
 }
 
 .section__what-title {
@@ -380,18 +393,18 @@
 }
 
 @media (width < 1024px) {
-  .section__how{
+  .section__how {
     min-height: 648px;
   }
 }
 
 @media (width < 768px) and (width >= 375px) {
-  .section__how{
+  .section__how {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     min-height: 1736px;
     margin-top: 50px;
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
 
@@ -440,6 +453,7 @@
 @media (width < 768px) and (width >= 375px) {
   .section__pictures{
     margin-top: 50px;
+    padding: 0px 10px;
   }
 }
 
