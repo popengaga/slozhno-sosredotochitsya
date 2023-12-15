@@ -322,8 +322,14 @@
 }
 
 .section__what-list {
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
 
+@media (width < 768px) and (width >= 375px){
+  .section__what-list {
+    grid-template-rows: repeat(3,1fr);
+  }
 }
 
 @media (width < 1024px) {
