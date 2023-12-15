@@ -40,8 +40,8 @@
   }
 }
 
-@media (prefers-color-scheme: dark){
-  .header__decor{
+@media (prefers-color-scheme: dark) {
+  .header__decor {
     display: block;
   }
 }
