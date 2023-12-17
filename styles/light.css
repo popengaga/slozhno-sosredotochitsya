@@ -46,7 +46,9 @@
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_light .header__decor {
+  .header__decor {
     visibility: hidden;
   }
 }
+
+
