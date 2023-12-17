@@ -41,14 +41,12 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .page.theme_light .header__decor {
-    visibility: hidden;
-  }
+.page.theme_light .header__decor {
+  visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
-  .page.theme_auto .header__decor {
+  .page.theme_light .header__decor {
     visibility: hidden;
   }
 }
