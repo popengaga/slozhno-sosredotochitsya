@@ -48,7 +48,7 @@
 
 @media (width < 768px) and (width >= 375px) {
   .header__decor {
-    top: 14px;
+    top: 10px;
     right: 40px;
   }
 }
