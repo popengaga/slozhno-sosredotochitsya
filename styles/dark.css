@@ -40,8 +40,12 @@
   }
 }
 
+.page.theme_dark  .header__decor { 
+  visibility: visible; 
+}  
+
 @media (prefers-color-scheme: dark) {
   .header__decor {
-    display: block;
+    visibility: visible;
   }
 }
